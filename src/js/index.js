@@ -9,12 +9,16 @@ btnLogar.addEventListener('click', e => {
 
     if (!btnLogar.classList.contains('disabled')) {
 
-        window.location = "https://pimquatro.github.io/";
+        const login = {
+            email: form.email.value,
+            senha: form.password.value,
+        };
 
-        // const login = {
-        //     email: form.email.value,
-        //     senha: form.password.value,
-        // };
+        if(login.email === 'teste@teste.com' && login.senha === 'teste@teste') {
+            window.location = "https://pimquatro.github.io/";
+        }else {
+            alert('Email ou senha Inválidos');
+        }
 
         // const header = {
         //     method: "POST",
