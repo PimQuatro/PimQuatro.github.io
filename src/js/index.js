@@ -9,28 +9,30 @@ btnLogar.addEventListener('click', e => {
 
     if (!btnLogar.classList.contains('disabled')) {
 
-        const login = {
-            email: form.email.value,
-            senha: form.password.value,
-        };
+        window.location = "https://pimquatro.github.io/";
 
-        const header = {
-            method: "POST",
-            body: login
-        };
+        // const login = {
+        //     email: form.email.value,
+        //     senha: form.password.value,
+        // };
 
-        fetch(URL, header)
-            .then(response => response.json()) // Espero que venha um hash como token
-            .then(data => {
-                if (data.erro) {
-                    alert('Usuario ou Senha Inválidos')
-                } else {
-                    localStorage.setItem('token', data.token);
-                }
-            })
-            .catch()
+        // const header = {
+        //     method: "POST",
+        //     body: login
+        // };
 
-        // console.log(localStorage.getItem('token'))
+        // fetch(URL, header)
+        //     .then(response => response.json()) // Espero que venha um hash como token
+        //     .then(data => {
+        //         if (data.erro) {
+        //             alert('Usuario ou Senha Inválidos')
+        //         } else {
+        //             localStorage.setItem('token', data.token);
+        //         }
+        //     })
+        //     .catch()
+
+        // // console.log(localStorage.getItem('token'))
 
     } else {
 
