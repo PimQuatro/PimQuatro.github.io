@@ -15,7 +15,7 @@ btnLogar.addEventListener('click', e => {
         };
 
         if(login.email === 'teste@teste.com' && login.senha === 'teste@teste') {
-            window.location = "https://www.youtube.com";
+            window.location = "https://pimquatro.github.io/App/";
         }else {
             alert('Email ou senha Inválidos');
         }
