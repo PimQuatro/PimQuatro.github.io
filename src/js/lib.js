@@ -38,7 +38,7 @@ function getUser(URL, form) {
                 emailHelp.classList.remove('d-none');
                 btnLogar.removeAttribute('disabled');
             }
-        },300);
+        },600);
 
 
         // const userToken = btoa(`${form.email.value}:${form.password.value}`);
