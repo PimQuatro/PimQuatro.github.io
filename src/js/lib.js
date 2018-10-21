@@ -1,6 +1,6 @@
 function validaCampos(form) {
      
-    $("form").on('blur keyup change click', e => {
+    $("form").on('blur keyup change click input', e => {
 
         if (form.email.value && String(form.password.value).length >= 8) {
             btnLogar.removeAttribute('disabled');
