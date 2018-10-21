@@ -27,7 +27,7 @@ function getUser(URL, form) {
 
     try {
 
-        setTimeout(300, () => {
+        setTimeout(() => {
             if (form.email.value === 'teste@teste.com' && form.password.value === 'teste@teste') {
                 progress.classList.add('d-none');
                 window.location = "https://pimquatro.github.io/App/";
@@ -38,7 +38,7 @@ function getUser(URL, form) {
                 emailHelp.classList.remove('d-none');
                 btnLogar.removeAttribute('disabled');
             }
-        });
+        },300, );
 
 
         // const userToken = btoa(`${form.email.value}:${form.password.value}`);
