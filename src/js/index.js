@@ -3,13 +3,14 @@ const btnLogar = document.querySelector('#logar');
 const URL = '';
 
 validaCampos(form);
-
-if (form.email.value && String(form.password.value).length >= 8) {
+window.addEventListener("mousemove", (e) =>{
+    if (form.email.value && String(form.password.value).length >= 8) {
     btnLogar.removeAttribute('disabled');
 }
 else {
     addAttribute(btnLogar, 'disabled');
 }
+});
 
 btnLogar.addEventListener('click', e => {
     e.preventDefault();
