@@ -16,7 +16,7 @@ function addAttribute(element, attr, value) {
     element.setAttributeNode(att);
 }
 
-async function getUser(URL, form) {
+function getUser(URL, form) {
 
     addAttribute(btnLogar, 'disabled');
 
@@ -68,6 +68,6 @@ async function getUser(URL, form) {
         // }
 
     } catch (err) {
-        // console.error(err); // Dev only
+         console.error(err); // Dev only
     }
 }
