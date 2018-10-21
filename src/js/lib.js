@@ -1,5 +1,5 @@
 function validaCampos(form) {
-    form.password.addEventListener('keyup', e => {
+    form.addEventListener('keyup change input', e => {
 
         if (form.email.value && String(form.password.value).length >= 8) {
             btnLogar.removeAttribute('disabled');
