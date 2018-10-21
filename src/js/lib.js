@@ -28,7 +28,7 @@ async function getUser(URL, form) {
     try {
 
         setTimeout(300, () => {
-            if (login.email === 'teste@teste.com' && login.senha === 'teste@teste') {
+            if (form.email.value === 'teste@teste.com' && form.password.value === 'teste@teste') {
                 progress.classList.add('d-none');
                 window.location = "https://pimquatro.github.io/App/";
             } else {
@@ -68,6 +68,6 @@ async function getUser(URL, form) {
         // }
 
     } catch (err) {
-        console.error(err); // Dev only
+        // console.error(err); // Dev only
     }
 }
